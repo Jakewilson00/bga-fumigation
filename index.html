@@ -1,5 +1,5 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -29,57 +29,57 @@
   --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+- { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
-body { 
-  font-family: 'Plus Jakarta Sans', sans-serif; 
-  background: var(--bg-color); 
-  color: var(--text-main); 
-  min-height: 100vh; 
-  padding-bottom: 40px;
+body {
+font-family: ‘Plus Jakarta Sans’, sans-serif;
+background: var(–bg-color);
+color: var(–text-main);
+min-height: 100vh;
+padding-bottom: 40px;
 }
 
 /* ── HEADER ── */
 .header {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+background: rgba(255, 255, 255, 0.85);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+padding: 16px 20px;
+display: flex;
+align-items: center;
+gap: 16px;
+position: sticky;
+top: 0;
+z-index: 100;
+box-shadow: 0 1px 0 rgba(0,0,0,0.05);
 }
-.header-logo { height: 44px; width: auto; border-radius: var(--radius-sm); }
-.header-text h1 { font-size: 18px; font-weight: 800; color: var(--primary); letter-spacing: -0.3px; line-height: 1.2; }
-.header-text p { font-size: 13px; font-weight: 500; color: var(--text-muted); }
+.header-logo { height: 44px; width: auto; border-radius: var(–radius-sm); }
+.header-text h1 { font-size: 18px; font-weight: 800; color: var(–primary); letter-spacing: -0.3px; line-height: 1.2; }
+.header-text p { font-size: 13px; font-weight: 500; color: var(–text-muted); }
 
 /* ── LAYOUT & CARDS ── */
 #app { padding: 20px 16px; max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
 
 .card {
-  background: var(--surface);
-  border-radius: var(--radius-xl);
-  padding: 24px;
-  box-shadow: var(--shadow-md);
-  border: 1px solid rgba(255,255,255,0.8);
+background: var(–surface);
+border-radius: var(–radius-xl);
+padding: 24px;
+box-shadow: var(–shadow-md);
+border: 1px solid rgba(255,255,255,0.8);
 }
 
 .card-title {
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: var(--primary-light);
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+font-size: 11px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+color: var(–primary-light);
+margin-bottom: 20px;
+display: flex;
+align-items: center;
+gap: 8px;
 }
-.card-title::after { content: ''; flex: 1; height: 1px; background: var(--border-color); }
+.card-title::after { content: ‘’; flex: 1; height: 1px; background: var(–border-color); }
 
 /* ── FORM FIELDS ── */
 .input-group { margin-bottom: 16px; }
@@ -88,69 +88,69 @@ body {
 .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 
 label {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--text-muted);
-  margin-bottom: 8px;
-  letter-spacing: 0.3px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 12px;
+font-weight: 600;
+color: var(–text-muted);
+margin-bottom: 8px;
+letter-spacing: 0.3px;
 }
 
 .badge {
-  font-size: 10px;
-  background: var(--accent);
-  color: var(--primary-light);
-  padding: 3px 8px;
-  border-radius: 20px;
-  font-weight: 700;
-  letter-spacing: 0;
+font-size: 10px;
+background: var(–accent);
+color: var(–primary-light);
+padding: 3px 8px;
+border-radius: 20px;
+font-weight: 700;
+letter-spacing: 0;
 }
 
 input, select {
-  width: 100%;
-  padding: 14px 16px;
-  border: 1.5px solid var(--border-color);
-  border-radius: var(--radius-md);
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--text-main);
-  background: var(--surface-alt);
-  transition: var(--transition);
-  -webkit-appearance: none;
-  appearance: none;
+width: 100%;
+padding: 14px 16px;
+border: 1.5px solid var(–border-color);
+border-radius: var(–radius-md);
+font-family: ‘Plus Jakarta Sans’, sans-serif;
+font-size: 15px;
+font-weight: 500;
+color: var(–text-main);
+background: var(–surface-alt);
+transition: var(–transition);
+-webkit-appearance: none;
+appearance: none;
 }
 
 input:focus, select:focus {
-  outline: none;
-  border-color: var(--border-focus);
-  background: var(--surface);
-  box-shadow: 0 0 0 4px rgba(40, 94, 32, 0.1);
+outline: none;
+border-color: var(–border-focus);
+background: var(–surface);
+box-shadow: 0 0 0 4px rgba(40, 94, 32, 0.1);
 }
 
 /* ── STAT BLOCKS (For Readonly/Auto Fields) ── */
 .stats-container {
-  display: flex;
-  gap: 12px;
-  background: var(--surface-alt);
-  border: 1px solid var(--border-color);
-  padding: 16px;
-  border-radius: var(--radius-md);
-  margin-top: 20px;
+display: flex;
+gap: 12px;
+background: var(–surface-alt);
+border: 1px solid var(–border-color);
+padding: 16px;
+border-radius: var(–radius-md);
+margin-top: 20px;
 }
 .stat-box { flex: 1; display: flex; flex-direction: column; gap: 4px; }
-.stat-label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px; }
-.stat-value { 
-  font-family: 'JetBrains Mono', monospace; 
-  font-size: 14px; 
-  font-weight: 700; 
-  color: var(--primary); 
-  border: none; 
-  background: transparent; 
-  padding: 0; 
-  pointer-events: none;
+.stat-label { font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(–text-muted); letter-spacing: 0.5px; }
+.stat-value {
+font-family: ‘JetBrains Mono’, monospace;
+font-size: 14px;
+font-weight: 700;
+color: var(–primary);
+border: none;
+background: transparent;
+padding: 0;
+pointer-events: none;
 }
 .stat-value::-webkit-calendar-picker-indicator { display: none; }
 
@@ -158,37 +158,37 @@ input:focus, select:focus {
 #linesContainer { display: flex; flex-direction: column; gap: 16px; margin-bottom: 16px; }
 
 .line-item {
-  background: var(--surface-alt);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 20px;
-  position: relative;
-  transition: var(--transition);
+background: var(–surface-alt);
+border: 1px solid var(–border-color);
+border-radius: var(–radius-lg);
+padding: 20px;
+position: relative;
+transition: var(–transition);
 }
-.line-item:hover { border-color: #c4d4c4; box-shadow: var(--shadow-sm); }
+.line-item:hover { border-color: #c4d4c4; box-shadow: var(–shadow-sm); }
 
 .li-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 16px;
 }
-.li-title { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+.li-title { font-size: 12px; font-weight: 700; color: var(–text-muted); text-transform: uppercase; letter-spacing: 1px; }
 
 .del-line {
-  background: #FFEBEB;
-  color: #D32F2F;
-  border: none;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--transition);
+background: #FFEBEB;
+color: #D32F2F;
+border: none;
+width: 28px;
+height: 28px;
+border-radius: 50%;
+font-size: 14px;
+font-weight: bold;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: var(–transition);
 }
 .del-line:hover { background: #D32F2F; color: white; transform: scale(1.05); }
 
@@ -199,76 +199,76 @@ input:focus, select:focus {
 /* Check Pills for Types */
 .checks { display: flex; gap: 8px; margin-top: 8px; }
 .check-pill {
-  flex: 1;
-  text-align: center;
-  padding: 12px 4px;
-  border: 1.5px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  background: var(--surface);
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text-muted);
-  cursor: pointer;
-  user-select: none;
-  transition: var(--transition);
+flex: 1;
+text-align: center;
+padding: 12px 4px;
+border: 1.5px solid var(–border-color);
+border-radius: var(–radius-sm);
+background: var(–surface);
+font-size: 13px;
+font-weight: 600;
+color: var(–text-muted);
+cursor: pointer;
+user-select: none;
+transition: var(–transition);
 }
-.check-pill input[type="checkbox"] { display: none; }
-.check-pill.on { background: var(--primary); border-color: var(--primary); color: white; box-shadow: 0 4px 10px rgba(26,67,20,0.2); }
+.check-pill input[type=“checkbox”] { display: none; }
+.check-pill.on { background: var(–primary); border-color: var(–primary); color: white; box-shadow: 0 4px 10px rgba(26,67,20,0.2); }
 
 /* ── BUTTONS ── */
 .add-line-btn {
-  width: 100%;
-  padding: 16px;
-  background: var(--accent);
-  border: 1.5px dashed var(--primary-light);
-  border-radius: var(--radius-md);
-  color: var(--primary-light);
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: var(--transition);
+width: 100%;
+padding: 16px;
+background: var(–accent);
+border: 1.5px dashed var(–primary-light);
+border-radius: var(–radius-md);
+color: var(–primary-light);
+font-family: ‘Plus Jakarta Sans’, sans-serif;
+font-size: 15px;
+font-weight: 700;
+cursor: pointer;
+transition: var(–transition);
 }
 .add-line-btn:hover { background: #DCE8DC; border-style: solid; }
 
 .generate-btn {
-  width: 100%;
-  background: var(--primary);
-  color: white;
-  border: none;
-  border-radius: var(--radius-lg);
-  padding: 18px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  box-shadow: var(--shadow-md);
-  transition: var(--transition);
-  margin-top: 10px;
+width: 100%;
+background: var(–primary);
+color: white;
+border: none;
+border-radius: var(–radius-lg);
+padding: 18px;
+font-family: ‘Plus Jakarta Sans’, sans-serif;
+font-size: 16px;
+font-weight: 700;
+letter-spacing: 0.5px;
+cursor: pointer;
+box-shadow: var(–shadow-md);
+transition: var(–transition);
+margin-top: 10px;
 }
-.generate-btn:hover { background: var(--primary-hover); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.generate-btn:hover { background: var(–primary-hover); transform: translateY(-2px); box-shadow: var(–shadow-lg); }
 
 .reset-btn {
-  width: 100%;
-  padding: 16px;
-  background: transparent;
-  border: none;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: var(--transition);
+width: 100%;
+padding: 16px;
+background: transparent;
+border: none;
+font-family: ‘Plus Jakarta Sans’, sans-serif;
+font-size: 14px;
+font-weight: 600;
+color: var(–text-muted);
+cursor: pointer;
+transition: var(–transition);
 }
-.reset-btn:hover { color: var(--text-main); }
+.reset-btn:hover { color: var(–text-main); }
 
 /* ── TOAST ── */
 .toast {
-  position: fixed; top: -100px; left: 50%; transform: translateX(-50%);
-  background: #D32F2F; color: white; padding: 12px 24px; border-radius: 30px;
-  font-size: 14px; font-weight: 600; box-shadow: var(--shadow-lg); z-index: 1000;
-  transition: top 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+position: fixed; top: -100px; left: 50%; transform: translateX(-50%);
+background: #D32F2F; color: white; padding: 12px 24px; border-radius: 30px;
+font-size: 14px; font-weight: 600; box-shadow: var(–shadow-lg); z-index: 1000;
+transition: top 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .toast.show { top: 20px; }
 
@@ -276,63 +276,64 @@ input:focus, select:focus {
 #cert-preview { display: none; }
 
 .cert-actions {
-  padding: 16px 20px;
-  display: flex;
-  gap: 12px;
-  max-width: 700px;
-  margin: 0 auto;
-  position: sticky; top: 0; background: var(--bg-color); z-index: 10;
+padding: 16px 20px;
+display: flex;
+gap: 12px;
+max-width: 700px;
+margin: 0 auto;
+position: sticky; top: 0; background: var(–bg-color); z-index: 10;
 }
 .cert-actions button {
-  flex: 1; padding: 14px; border-radius: var(--radius-sm); font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; transition: var(--transition);
+flex: 1; padding: 14px; border-radius: var(–radius-sm); font-family: ‘Plus Jakarta Sans’, sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; transition: var(–transition);
 }
-.btn-back { background: white; border: 1.5px solid var(--border-color); color: var(--text-main); }
-.btn-back:hover { background: var(--surface-alt); }
-.btn-pdf { background: var(--primary-light); border: none; color: white; }
-.btn-print { background: var(--primary); border: none; color: white; flex: 1.5; box-shadow: var(--shadow-md); }
+.btn-back { background: white; border: 1.5px solid var(–border-color); color: var(–text-main); }
+.btn-back:hover { background: var(–surface-alt); }
+.btn-pdf { background: var(–primary-light); border: none; color: white; }
+.btn-print { background: var(–primary); border: none; color: white; flex: 1.5; box-shadow: var(–shadow-md); }
 
 .cert-wrap {
-  background: white; margin: 0 auto 40px; border-radius: 0; padding: 40px;
-  box-shadow: var(--shadow-lg); max-width: 800px; overflow-x: auto;
+background: white; margin: 0 auto 40px; border-radius: 0; padding: 40px;
+box-shadow: var(–shadow-lg); max-width: 800px; overflow-x: auto;
 }
 
 .cert-logo-area { text-align: center; margin-bottom: 20px; }
 .cert-logo-img { width: 90px; height: auto; display: block; margin: 0 auto 10px; }
 
 .cert-title {
-  text-align: center; font-size: 16pt; font-weight: 800; letter-spacing: 1px;
-  margin-bottom: 20px; font-family: Arial, sans-serif; color: var(--primary);
+text-align: center; font-size: 16pt; font-weight: 800; letter-spacing: 1px;
+margin-bottom: 20px; font-family: Arial, sans-serif; color: var(–primary);
 }
 
-.ct { width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 8pt; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.ct { width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 8pt; font-family: ‘Helvetica Neue’, Arial, sans-serif; }
 .ct td, .ct th { border: 1px solid #ccc; padding: 6px 8px; }
-.ct th { background: var(--surface-alt); color: var(--primary); font-weight: bold; text-align: center; font-size: 7.5pt; text-transform: uppercase; }
-.ct .lbl { background: var(--surface-alt); color: var(--primary); font-weight: bold; font-size: 8pt; }
+.ct th { background: var(–surface-alt); color: var(–primary); font-weight: bold; text-align: center; font-size: 7.5pt; text-transform: uppercase; }
+.ct .lbl { background: var(–surface-alt); color: var(–primary); font-weight: bold; font-size: 8pt; }
 .ct td.c { text-align: center; }
 
 .under-fum {
-  text-align: center; font-size: 20pt; font-weight: 900; color: rgba(211, 47, 47, 0.15);
-  letter-spacing: 4px; margin: 10px 0; font-family: 'Arial Black', sans-serif; text-transform: uppercase;
+text-align: center; font-size: 20pt; font-weight: 900; color: rgba(211, 47, 47, 0.15);
+letter-spacing: 4px; margin: 10px 0; font-family: ‘Arial Black’, sans-serif; text-transform: uppercase;
 }
 
 .cert-note {
-  font-size: 7.5pt; text-align: center; margin: 16px 0; line-height: 1.6;
-  font-family: Arial, sans-serif; color: #333;
+font-size: 7.5pt; text-align: center; margin: 16px 0; line-height: 1.6;
+font-family: Arial, sans-serif; color: #333;
 }
 
 .sig-t { width: 100%; border-collapse: collapse; font-size: 8pt; font-family: Arial, sans-serif; margin-top: 16px; }
-.sig-t th { background: var(--surface-alt); color: var(--primary); border: 1px solid #ccc; padding: 6px 8px; text-align: center; }
+.sig-t th { background: var(–surface-alt); color: var(–primary); border: 1px solid #ccc; padding: 6px 8px; text-align: center; }
 .sig-t td { border: 1px solid #ccc; padding: 16px 8px; text-align: center; }
 
 .cert-footer { text-align: center; font-size: 7pt; margin-top: 24px; line-height: 1.6; font-family: Arial, sans-serif; color: #666; }
 
 @media print {
-  body { background: white; padding: 0; }
-  .header, #app, .cert-actions { display: none !important; }
-  #cert-preview { display: block !important; }
-  .cert-wrap { margin: 0; padding: 0; box-shadow: none; max-width: 100%; }
+body { background: white; padding: 0; }
+.header, #app, .cert-actions { display: none !important; }
+#cert-preview { display: block !important; }
+.cert-wrap { margin: 0; padding: 0; box-shadow: none; max-width: 100%; }
 }
 </style>
+
 </head>
 <body>
 
@@ -347,80 +348,89 @@ input:focus, select:focus {
 <div id="app">
 
   <!-- Container Details -->
+
   <div class="card">
     <div class="card-title">Container Details</div>
 
-    <div class="row2">
-      <div class="input-group">
-        <label>Container No.</label>
-        <input type="text" id="containerNo" placeholder="e.g. 13 20FT">
-      </div>
-      <div class="input-group">
-        <label>Size</label>
-        <select id="volume">
-          <option value="33.2">33.2 m³</option>
-          <option value="76.3">76.3 m³</option>
-        </select>
-      </div>
-    </div>
+```
+<div class="row2">
+  <div class="input-group">
+    <label>Container No.</label>
+    <input type="text" id="containerNo" placeholder="e.g. 13 20FT">
+  </div>
+  <div class="input-group">
+    <label>Size</label>
+    <select id="volume">
+      <option value="33.2">33.2 m³</option>
+      <option value="76.3">76.3 m³</option>
+    </select>
+  </div>
+</div>
 
-    <div class="input-group" style="margin-top: 16px;">
-      <label>Fumigation Date <span class="badge">Sets all dates</span></label>
-      <input type="date" id="fumDate">
-    </div>
+<div class="input-group" style="margin-top: 16px;">
+  <label>Fumigation Date <span class="badge">Sets all dates</span></label>
+  <input type="date" id="fumDate">
+</div>
 
-    <!-- Grouped Auto Fields -->
-    <div class="stats-container">
-      <div class="stat-box">
-        <span class="stat-label">Cert Date</span>
-        <input type="date" id="certDate" class="stat-value" readonly>
-      </div>
-      <div class="stat-box">
-        <span class="stat-label">Release <span class="badge" style="background:transparent;padding:0;color:var(--text-muted)">+10d</span></span>
-        <input type="date" id="releaseDate" class="stat-value" readonly>
-      </div>
-      <div class="stat-box">
-        <span class="stat-label">Available <span class="badge" style="background:transparent;padding:0;color:var(--text-muted)">+11d</span></span>
-        <input type="date" id="availDate" class="stat-value" readonly>
-      </div>
-    </div>
+<!-- Grouped Auto Fields -->
+<div class="stats-container">
+  <div class="stat-box">
+    <span class="stat-label">Cert Date</span>
+    <input type="date" id="certDate" class="stat-value" readonly>
+  </div>
+  <div class="stat-box">
+    <span class="stat-label">Release <span class="badge" style="background:transparent;padding:0;color:var(--text-muted)">+10d</span></span>
+    <input type="date" id="releaseDate" class="stat-value" readonly>
+  </div>
+  <div class="stat-box">
+    <span class="stat-label">Available <span class="badge" style="background:transparent;padding:0;color:var(--text-muted)">+11d</span></span>
+    <input type="date" id="availDate" class="stat-value" readonly>
+  </div>
+</div>
+```
+
   </div>
 
   <!-- Loading Details -->
+
   <div class="card">
     <div class="card-title">Loading Details</div>
 
-    <div class="input-group">
-      <label>Loaded From</label>
-      <input type="text" id="loadedFrom" value="SHED">
-    </div>
+```
+<div class="input-group">
+  <label>Loaded From</label>
+  <input type="text" id="loadedFrom" value="SHED">
+</div>
 
-    <div class="input-group">
-      <label>Loaded By</label>
-      <input type="text" id="loadedBy" list="loaders-list" placeholder="Select or type...">
-      <datalist id="loaders-list">
-        <option value="JW">
-        <option value="CM">
-        <option value="CMc">
-        <option value="PC">
-        <option value="NS">
-        <option value="LW">
-      </datalist>
-    </div>
+<div class="input-group">
+  <label>Loaded By</label>
+  <input type="text" id="loadedBy" list="loaders-list" placeholder="Select or type...">
+  <datalist id="loaders-list">
+    <option value="JW">
+    <option value="CM">
+    <option value="CMc">
+    <option value="PC">
+    <option value="NS">
+    <option value="LW">
+  </datalist>
+</div>
 
-    <div class="stats-container">
-      <div class="stat-box">
-        <span class="stat-label">Load Date</span>
-        <input type="date" id="loadDate" class="stat-value" readonly>
-      </div>
-      <div class="stat-box">
-        <span class="stat-label">CHEP Count</span>
-        <input type="number" id="chepCount" class="stat-value" readonly placeholder="Auto" style="font-size: 16px;">
-      </div>
-    </div>
+<div class="stats-container">
+  <div class="stat-box">
+    <span class="stat-label">Load Date</span>
+    <input type="date" id="loadDate" class="stat-value" readonly>
+  </div>
+  <div class="stat-box">
+    <span class="stat-label">CHEP Count</span>
+    <input type="number" id="chepCount" class="stat-value" readonly placeholder="Auto" style="font-size: 16px;">
+  </div>
+</div>
+```
+
   </div>
 
   <!-- Lines -->
+
   <div class="card">
     <div class="card-title">Line Items</div>
     <div id="linesContainer"></div>
@@ -428,6 +438,7 @@ input:focus, select:focus {
   </div>
 
   <!-- Fum Details -->
+
   <div class="card">
     <div class="card-title">Extra Details</div>
     <div class="input-group">
@@ -436,12 +447,13 @@ input:focus, select:focus {
     </div>
   </div>
 
-  <button class="generate-btn" onclick="generateCert()">Generate Certificate</button>
-  <button class="reset-btn" onclick="resetForm()">Start New Certificate</button>
+<button class="generate-btn" onclick="generateCert()">Generate Certificate</button>
+<button class="reset-btn" onclick="resetForm()">Start New Certificate</button>
 
 </div>
 
 <!-- Preview -->
+
 <div id="cert-preview">
   <div class="cert-actions">
     <button class="btn-back" onclick="goBack()">← Back to Edit</button>
@@ -454,6 +466,7 @@ input:focus, select:focus {
 </div>
 
 <!-- Toast -->
+
 <div id="toast" class="toast"></div>
 
 <script>
@@ -464,9 +477,12 @@ function isoToday() {
 }
 
 function addDays(iso, n) {
-  const d = new Date(iso + 'T00:00:00');
-  d.setDate(d.getDate() + n);
-  return d.toISOString().split('T')[0];
+  const [y, m, d] = iso.split('-').map(Number);
+  const date = new Date(y, m - 1, d + n);
+  const yy = date.getFullYear();
+  const mm = String(date.getMonth() + 1).padStart(2, '0');
+  const dd = String(date.getDate()).padStart(2, '0');
+  return `${yy}-${mm}-${dd}`;
 }
 
 function fmt(iso) {
@@ -778,5 +794,6 @@ function savePDF() {
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
 </body>
 </html>
